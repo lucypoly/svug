@@ -1,0 +1,13 @@
+.slider {
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .slider {
+        display: none;
+    }
+}
