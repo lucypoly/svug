@@ -1,0 +1,13 @@
+.App {
+    flex: 1 0 auto;
+    margin-top: 60px;
+}
+
+html, body, #root, .body {
+    height: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}

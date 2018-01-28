@@ -6,6 +6,7 @@ import Home from '../Home/Home';
 import Contacts from '../Contacts/Contacts';
 import Portfolio from '../Portfolio/Portfolio';
 import NavBar from '../Navbar/Navbar';
+import Order from '../Order/Order';
 import Footer from '../Footer/Footer';
 
 import './App.css';
@@ -14,14 +15,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <NavBar/>
+      <div className="body">
+        <div className="App">
+          <NavBar/>
 
-        <Route exact path="/" component={Home}/>
-        <Route path="/contacts" component={Contacts}/>
-        <Route path="/portfolio" component={Portfolio}/>
+          <Route exact path="/" component={Home}/>
+          <Route path="/contacts" component={Contacts}/>
+          <Route path="/portfolio" component={Portfolio}/>
+          <Route path="/order" component={Order}/>
 
-        <Footer/>
+          <div className="push"></div>
+        </div>
+        <Footer className="footer"/>
       </div>
     )
   }

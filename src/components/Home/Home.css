@@ -6,6 +6,10 @@ p {
     text-align: justify;
 }
 
+.page-header {
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 768px) {
     .slider {
         display: none;

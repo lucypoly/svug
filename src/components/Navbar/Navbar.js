@@ -13,7 +13,7 @@ class NavBar extends Component {
       <Navbar collapseOnSelect fixedTop>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand"><img className="logo" src={logo}/></a>
+            <Link href="/" to="/"><img className="logo" alt="logo" src={logo}/></Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -24,7 +24,7 @@ class NavBar extends Component {
             <NavItem componentClass={Link} href="/portfolio" to="/portfolio" active={location.pathname === '/portfolio'}>Портфолио</NavItem>
           </Nav>
           <Nav pullRight>
-            <NavItem componentClass={Link} href="/contacts" to="/contacts" active={location.pathname === '/contacts'}>Заказ
+            <NavItem componentClass={Link} href="/order" to="/order" active={location.pathname === '/order'}>Заказ
               онлйан</NavItem>
             <NavItem componentClass={Link} href="/contacts" to="/contacts" active={location.pathname === '/contacts'}>Контакты</NavItem>
           </Nav>
