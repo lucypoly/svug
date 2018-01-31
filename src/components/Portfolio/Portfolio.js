@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
+import './Portfolio.css';
 
 import img1 from '../../images/portfolio/img1.jpg';
 import img2 from '../../images/portfolio/img2.jpg';
@@ -43,7 +44,7 @@ class Portfolio extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container portfolio">
         <Gallery margin={5} photos={photos} onClick={this.openLightbox}/>
         <Lightbox images={photos}
                   onClose={this.closeLightbox}
