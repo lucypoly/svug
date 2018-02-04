@@ -26,7 +26,7 @@ class App extends Component {
           <Route path="/order" component={Order}/>
           <Route path="/services" component={Services}/>
 
-          <div className="push"></div>
+          <div className="push"> </div>
         </div>
         <Footer className="footer"/>
       </div>
