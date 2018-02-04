@@ -12,13 +12,12 @@ class Contacts extends Component {
         <Grid>
           <Row className="show-grid">
             <Col xs={12} md={6}>
-              <p>Наш адрес: Киев, Бульварно-Кудрявская 8б, офис 2</p>
+              <p>Наш адрес: <a href="https://goo.gl/maps/1iBZdiBTKKk" target="_blank" rel="noopener noreferrer">Киев, Бульварно-Кудрявская 8б, офис 2</a></p>
               <p>Всю необходимую информацию можно уточнить по следующим телефонам:</p>
               <p><a href="tel:+380966033377"> (096) 603-33-77 (Киевстар) </a></p>
               <p><a href="tel:+380636033377"> (063) 603-33-77 (Life) </a></p>
               <p>Менеджер Вадим</p>
               <p><a href="mailto:kievreklam@ukr.net">Или напишите нам на почту: kievreklam@ukr.net </a></p>
-              <address></address>
               <p>Наши сотрудники&nbsp;максимально быстро свяжутся с Вами для уточнения всех деталей!</p>
             </Col>
             <Col xs={12} md={6}>

@@ -1,3 +1,14 @@
 .fa-inverse:hover {
     color: #c4c4c4;
 }
+
+@media only screen and (max-width: 768px) {
+    .inline-block {
+        display: inline-block !important;
+    }
+
+    .my-nav {
+        float: right;
+        margin-right: 20px;
+    }
+}

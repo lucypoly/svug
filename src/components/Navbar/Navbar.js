@@ -20,7 +20,7 @@ class NavBar extends Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem componentClass={Link} href="/" to="/" active={location.pathname === '/'}>Главная</NavItem>
-            <NavItem componentClass={Link} href="/" to="/" active={location.pathname === '/'}>Услуги</NavItem>
+            <NavItem componentClass={Link} href="/services" to="/services" active={location.pathname === '/services'}>Услуги</NavItem>
             <NavItem componentClass={Link} href="/portfolio" to="/portfolio" active={location.pathname === '/portfolio'}>Портфолио</NavItem>
           </Nav>
           <Nav pullRight>
