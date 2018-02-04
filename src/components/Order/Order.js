@@ -29,7 +29,7 @@ class Order extends Component {
   render() {
     return (
       <div className="container order">
-        <PageHeader>Оставьте, пожалуйста, заказ, и мы с Вами свяжемся!</PageHeader>
+        <PageHeader className="text-center">Оставьте, пожалуйста, заказ, и мы с Вами свяжемся!</PageHeader>
         <Form horizontal action="send.php" method="post">
           <FormGroup controlId="name">
             <Col componentClass={ControlLabel} sm={2}>
