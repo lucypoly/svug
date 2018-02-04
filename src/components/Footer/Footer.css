@@ -2,6 +2,10 @@
     color: #c4c4c4;
 }
 
+.fa-2x {
+    font-size: 1.5em;
+}
+
 @media only screen and (max-width: 768px) {
     .inline-block {
         display: inline-block !important;
