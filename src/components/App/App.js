@@ -4,10 +4,10 @@ import { withRouter } from 'react-router-dom';
 
 import Home from '../Home/Home';
 import Contacts from '../Contacts/Contacts';
-import Services from '../Services/Services';
 import Portfolio from '../Portfolio/Portfolio';
 import NavBar from '../Navbar/Navbar';
 import Order from '../Order/Order';
+import Service from '../Service/Service';
 import Footer from '../Footer/Footer';
 
 import './App.css';
@@ -24,7 +24,7 @@ class App extends Component {
           <Route path="/contacts" component={Contacts}/>
           <Route path="/portfolio" component={Portfolio}/>
           <Route path="/order" component={Order}/>
-          <Route path="/services" component={Services}/>
+          <Route path="/services/:id" component={Service}/>
 
           <div className="push"> </div>
         </div>

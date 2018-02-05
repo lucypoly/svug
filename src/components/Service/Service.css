@@ -1,3 +1,10 @@
 .image {
-    width: 100%;
+    max-width: 100%;
+    float: right;
+    height: 350px;
+    margin: 20px 0;
+}
+
+.dropdown-menu {
+    overflow: auto;
 }

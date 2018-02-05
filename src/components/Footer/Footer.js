@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 import './Footer.css';
 
 class Footer extends Component {
@@ -7,7 +9,10 @@ class Footer extends Component {
     return (
       <Navbar>
         <Nav className="inline-block">
-          <NavItem className="inline-block">
+          <NavItem className="inline-block"
+                   componentClass={Link}
+                   href='/contacts'
+                   to='/contacts'>
             SVU © 2018
           </NavItem>
         </Nav>

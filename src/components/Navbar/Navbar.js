@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import logo from '../../images/logo.png';
 import './Navbar.css';
+import data from './data';
 
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 class NavBar extends Component {
   render() {
@@ -20,8 +21,19 @@ class NavBar extends Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem componentClass={Link} href="/" to="/" active={location.pathname === '/'}>Главная</NavItem>
-            <NavItem componentClass={Link} href="/services" to="/services" active={location.pathname === '/services'}>Услуги</NavItem>
-            <NavItem componentClass={Link} href="/portfolio" to="/portfolio" active={location.pathname === '/portfolio'}>Портфолио</NavItem>
+            <NavDropdown title="Услуги" id="dropdown-size-medium" onSelect={this.selectItem}>
+              {data.map(item =>
+                <MenuItem
+                  eventKey={item.title}
+                  componentClass={Link}
+                  href={`/services/${item.id}`}
+                  to={`/services/${item.id}`}
+                >{item.title}
+                </MenuItem>
+              )}
+            </NavDropdown>
+            <NavItem componentClass={Link} href="/portfolio" to="/portfolio"
+                     active={location.pathname === '/portfolio'}>Портфолио</NavItem>
           </Nav>
           <Nav pullRight>
             <NavItem componentClass={Link} href="/order" to="/order" active={location.pathname === '/order'}>Заказ
