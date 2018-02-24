@@ -1,7 +1,7 @@
 .image {
+    width: 100%;
     max-width: 100%;
-    float: right;
-    height: 350px;
+    object-fit: cover;
     margin: 20px 0;
 }
 

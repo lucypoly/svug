@@ -24,6 +24,7 @@ class NavBar extends Component {
             <NavDropdown title="Услуги" id="dropdown-size-medium" onSelect={this.selectItem}>
               {data.map(item =>
                 <MenuItem
+                  key={item.id}
                   eventKey={item.title}
                   componentClass={Link}
                   href={`/services/${item.id}`}

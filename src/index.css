@@ -1,7 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-size: 15px;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'PT Sans Caption', sans-serif;
 }
 
 .navbar-toggle {
@@ -12,3 +17,6 @@ p {
     text-align: justify;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
