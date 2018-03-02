@@ -38,7 +38,7 @@ class NavBar extends Component {
           </Nav>
           <Nav pullRight>
             <NavItem componentClass={Link} href="/order" to="/order" active={location.pathname === '/order'}>Заказ
-              онлйан</NavItem>
+              онлайн</NavItem>
             <NavItem componentClass={Link} href="/contacts" to="/contacts" active={location.pathname === '/contacts'}>Контакты</NavItem>
           </Nav>
         </Navbar.Collapse>
