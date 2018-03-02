@@ -30,7 +30,7 @@ class Order extends Component {
     return (
       <div className="container order">
         <PageHeader className="text-center">Оставьте, пожалуйста, заказ, и мы с Вами свяжемся!</PageHeader>
-        <Form horizontal action="send.php" method="post">
+        <Form horizontal action="static/send.php" method="post">
           <FormGroup controlId="name">
             <Col componentClass={ControlLabel} sm={2}>
               Имя*
